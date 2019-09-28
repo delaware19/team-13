@@ -23,6 +23,16 @@ font-size: 20px;
 color: white;
 `;
 
+const SubHeaderBig = styled.div`
+font-size: 20px;
+color: white;
+width: 100%;
+justify-content: center;
+display: flex;
+align-items: center;
+
+`;
+
 const StyledButton = styled(Button)`
 
 width: 200px;
@@ -39,28 +49,38 @@ font-size: 18px;
 const StyledForm = styled(Form)`
 padding-top: 30px;
 `;
+
+const StyledContainer = styled(Container)`
+display: flex;
+flex-direction: wrap;
+`;
 export class Level3 extends Component{
     render() {
         return (
             <div style = {{width: "100%", height:"100%", textAlign: "center", backgroundColor: "#E47D5C", paddingBottom: "1000px"}}>
             <Container>
+                
                 <img src = {reseach3} style = {{width:"10%", paddingTop: "50px"}}></img>
+                    
                     <Header>Confirm Deadlines
                     <br></br>(drafting and introducing bills,
                     <br></br>committee sessions, floor votes)</Header>
-                <SubHeader>
-                    It's time to do some research and enter your important deadlines
-                    <br></br>Some things to keep in mind when researching:
-                    <br></br>-Start of Legislative Session - When the legislative session starts
-                    <br></br>Intent to file start - In many states you must file paper work showing you intend to file a bill
+                    <StyledContainer>
+                <SubHeaderBig>
+                    Some things to keep in mind when researching:
+                    <br></br>
+                    Start of Legislative Session - When the legislative session starts
+                    <br></br>
+                    Intent to file start 
+                    - In many states you must file paper work showing you intend to file a bill
                     <br></br>Bill submission start - When you can start submitting bills to go to committee
                     <br></br>Intent to file deadline - Final day to submit an intent to file
                     <br></br>Bill Submission deadline - Final day to submit a bill
                     <br></br>Committee hearing dates - When Committees start holding hearings on bills
                     <br></br>Floor vote deadline - Last day they will be holding floor votes. 
                     <br></br>End of Legislative Session - Last Day 
-                </SubHeader>
-
+                </SubHeaderBig>
+                </StyledContainer>
                 <StyledForm>
                     <Form.Row>
                         <Form.Group as={Col} controlId="formGridEmail">
