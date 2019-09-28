@@ -10,6 +10,10 @@ import roadmap from "../HomePage/assets/roadmap.png";
 // Listing Wrapper takes care of the dynamically given items
 // and puts them in a grid that reponsively adjusts
 
+const Back = styled.div`
+background-color: #E47D5C;
+`;
+
 const Mapicon = styled.img`
 width: 50p%;
 `;
@@ -21,12 +25,10 @@ width: 50p%;
 export class HomePage extends Component{
     render() {
         return (
-            <div>
+            <Back>
                 <Mapicon src={roadmap}></Mapicon>
-                <TypeFormComponent>
                 
-                </TypeFormComponent>
-            </div>
+            </Back>
         );
     }
 }
