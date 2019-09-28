@@ -48,7 +48,7 @@ export class SignIn extends Component {
     render() {
         return (
             <>
-                <h1 style={{ backgroundColor: "#E47D5C", textAlign: "center", marginBottom: "0px" }}>Continue Your Journey</h1>
+                <h1 style={{ backgroundColor: "#E47D5C", textAlign: "center", marginBottom: "0px"}}>Continue Your Journey</h1>
                 <StyledContainer>
                     <Form>
                         <Form.Group style = {{paddingLeft: "400px", paddingRight: "400px"}} controlId="formBasicEmail">
