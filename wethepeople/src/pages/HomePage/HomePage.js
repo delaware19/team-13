@@ -1,4 +1,5 @@
 import React, { Component }  from "react";
+import { TypeFormComponent } from "./components/TypeFormComponent";
 
 
 
@@ -18,7 +19,7 @@ export class HomePage extends Component{
     render() {
         return (
             <div>
-                hi there this is the home page
+                <TypeFormComponent></TypeFormComponent>
             </div>
         );
     }
