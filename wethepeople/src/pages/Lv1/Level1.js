@@ -15,8 +15,8 @@ import { Link } from 'react-router-dom';
 export class Level1 extends Component{
     render() {
         return (
-            <div>
-                <img src = {reseach1}></img>
+            <div style = {{width: "100%", height:"100%", textAlign: "center", backgroundColor: "#E47D5C", paddingBottom: "1000px"}}>
+                <img src = {reseach1} style = {{width:"10%", paddingTop: "100px"}}></img>
                 <p>Discover Your Voice And Find Your Passion</p>
                 <p>
                     Congrats! Just By Starting here, you are on the path for success!

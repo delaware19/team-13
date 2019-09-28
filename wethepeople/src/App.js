@@ -13,6 +13,7 @@ import RoadMap from './pages/RoadMap/RoadMap';
 import Level1 from './pages/Lv1/Level1';
 import Level2 from './pages/Lv2/Level2';
 import Level3 from './pages/Lv3/Level3';
+import Finish1 from './pages/FinishedStage1/FinishedStage1';
 
 
 
@@ -20,6 +21,9 @@ import Level3 from './pages/Lv3/Level3';
 function App() {
   return (
     <Switch>
+      <Route path='/FinishedStage1'>
+        <Finish1 />
+      </Route>
       <Route path='/Lv3'>
         <Level3 />
       </Route>

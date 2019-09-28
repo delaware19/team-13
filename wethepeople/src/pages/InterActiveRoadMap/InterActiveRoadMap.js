@@ -29,10 +29,10 @@ export class InterActiveRoadMap extends Component {
             <h1>Reseach Phase</h1>
             <div>
                 <Link to='/Lv1'>
-                    <img src = {reseach1}></img>
+                    <img src = {reseach1} style= {{width:"10%"}}></img>
                 </Link>
-                <img src = {reseach2} style = {{filter: "grayscale(100%)"}}></img>
-                <img src = {reseach3} style = {{filter: "grayscale(100%)"}}></img>
+                <img src = {reseach2} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
+                <img src = {reseach3} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
             </div>
             
           </div>
@@ -40,27 +40,27 @@ export class InterActiveRoadMap extends Component {
           <div className = "phase2">
             <h1>Coalition Building Phase</h1>
                 <div>
-                 <img src = {coalition4} style = {{filter: "grayscale(100%)"}}></img>
-                 <img src = {coalition5} style = {{filter: "grayscale(100%)"}}></img>
-                 <img src = {coalition6} style = {{filter: "grayscale(100%)"}}></img>
+                 <img src = {coalition4} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
+                 <img src = {coalition5} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
+                 <img src = {coalition6} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
                 </div>
           </div>
 
           <div className = "phase3"> 
             <h1>Story Telling Phase</h1>
             <div>
-                <img src = {story7} style = {{filter: "grayscale(100%)"}}></img>
-                <img src = {story8} style = {{filter: "grayscale(100%)"}}></img>
-                <img src = {story9} style = {{filter: "grayscale(100%)"}}></img>
+                <img src = {story7} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
+                <img src = {story8} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
+                <img src = {story9} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
             </div>
           </div>
 
           <div className = "phase4">
             <h1>Law Making Phase</h1>
             <div>
-                <img src = {law10} style = {{filter: "grayscale(100%)"}}></img>
-                <img src = {law11} style = {{filter: "grayscale(100%)"}}></img>
-                <img src = {law12} style = {{filter: "grayscale(100%)"}}></img>
+                <img src = {law10} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
+                <img src = {law11} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
+                <img src = {law12} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
             </div>
           </div>
       </div>

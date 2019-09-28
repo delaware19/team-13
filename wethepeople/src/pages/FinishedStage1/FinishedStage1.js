@@ -16,14 +16,16 @@ export class FinishedStage1 extends Component{
     render() {
         return (
             <div>
-                <img src = {reseach1}></img>
-                <p>Discover Your Voice And Find Your Passion</p>
-                <p>
-                    Congrats! Just By Starting here, you are on the path for success!
-                </p>
-                <Link to='/InterActiveRoadMap2'>
-                    <Button bright="light">Next Level!</Button>
-                </Link>
+                <h1>Congratulations You finished Phase one of the Hopenomics System</h1>
+                <h2>A Rise team member will be in contact with you to discuss the next stage
+                    <br></br> of the process.<br></br>We would like to commend you for taking the first steps twords
+                    <br></br>making a real change in your community.
+                </h2>
+                <h2>
+                    The next step will be to schedule a call with one of our staff members
+                </h2>
+
+                <h1>Remember that We The People Are Ready to Make a Change</h1>
             </div>
         );
     }
