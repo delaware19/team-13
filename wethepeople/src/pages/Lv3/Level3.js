@@ -11,17 +11,44 @@ import { Link } from 'react-router-dom';
 // Listing Wrapper takes care of the dynamically given items
 // and puts them in a grid that reponsively adjusts
 
+const Header = styled.div`
+padding-top: 30px;
+padding-bottom: 15px;
+font-size: 30px;
+color: white;
+`;
 
+const SubHeader = styled.div`
+font-size: 20px;
+color: white;
+`;
+
+const StyledButton = styled(Button)`
+
+width: 200px;
+height: 65px;
+margin-right: 20px;
+margin-bottom: 20px;
+background-color: white; 
+color: black;
+border-radius: 15px;
+border-color: white;
+font-size: 18px;
+`;
+
+const StyledForm = styled(Form)`
+padding-top: 30px;
+`;
 export class Level3 extends Component{
     render() {
         return (
             <div style = {{width: "100%", height:"100%", textAlign: "center", backgroundColor: "#E47D5C", paddingBottom: "1000px"}}>
             <Container>
                 <img src = {reseach3} style = {{width:"10%", paddingTop: "50px"}}></img>
-                    <p>Confirm Deadlines
+                    <Header>Confirm Deadlines
                     <br></br>(drafting and introducing bills,
-                    <br></br>committee sessions, floor votes)</p>
-                <p>
+                    <br></br>committee sessions, floor votes)</Header>
+                <SubHeader>
                     It's time to do some research and enter your important deadlines
                     <br></br>Some things to keep in mind when researching:
                     <br></br>-Start of Legislative Session - When the legislative session starts
@@ -32,47 +59,47 @@ export class Level3 extends Component{
                     <br></br>Committee hearing dates - When Committees start holding hearings on bills
                     <br></br>Floor vote deadline - Last day they will be holding floor votes. 
                     <br></br>End of Legislative Session - Last Day 
-                </p>
+                </SubHeader>
 
-                <Form>
+                <StyledForm>
                     <Form.Row>
                         <Form.Group as={Col} controlId="formGridEmail">
-                        <Form.Label>Start of Legislative Session</Form.Label>
+                        <SubHeader>Start of Legislative Session</SubHeader>
                         <Form.Control type="date" placeholder="Date" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Intent to File Start</Form.Label>
+                        <SubHeader>Intent to File Start</SubHeader>
                         <Form.Control type="date" placeholder="date" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>When you can start submitting bills</Form.Label>
+                        <SubHeader>When you can start submitting bills</SubHeader>
                         <Form.Control type="date" placeholder="date" />
                         </Form.Group>
                     </Form.Row>
 
                     <Form.Row>
                         <Form.Group as={Col} controlId="formGridEmail">
-                        <Form.Label>Final Day you can Submit a Bill</Form.Label>
+                        <SubHeader>Final Day you can Submit a Bill</SubHeader>
                         <Form.Control type="date" placeholder="Date" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Final Day you can Submit a Bill</Form.Label>
+                        <SubHeader>Final Day you can Submit a Bill</SubHeader>
                         <Form.Control type="date" placeholder="date" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Committee Hearing Dates</Form.Label>
+                        <SubHeader>Committee Hearing Dates</SubHeader>
                         <Form.Control type="date" placeholder="date" />
                         </Form.Group>
                     </Form.Row>
-                </Form>
+                </StyledForm>
 
 
                 <Link to='/FinishedStage1'>
-                    <Button bright="light">Submit!</Button>
+                    <StyledButton bright="light">Submit!</StyledButton>
                 </Link>
             </Container>
             </div>
