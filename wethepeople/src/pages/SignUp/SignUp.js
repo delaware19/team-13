@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Form, Button, Container } from "react-bootstrap";
-//import styled from "styled-components";
+import styled from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
@@ -10,10 +10,14 @@ import { Link } from 'react-router-dom';
 // and puts them in a grid that reponsively adjusts
 
 
+
 export class SignUp extends Component {
   render() {
     return (
-      <Container>
+
+
+
+      <Container style = {{padding: "20px"}}>
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>First Name</Form.Label>
@@ -54,11 +58,6 @@ export class SignUp extends Component {
             <Form.Label>Phone Number</Form.Label>
             <Form.Control type="phoneNumber" placeholder="Number" />
           </Form.Group>
-
-          <Form.Group controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
-
           <Link to='/InterActiveRoadMap'>
             <Button variant="primary" type="submit">
               Submit
