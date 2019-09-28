@@ -13,8 +13,15 @@ const Back = styled.div`
 background-color: #E47D5C;
 `;
 
+const TextWrapper = styled.div`
+font-family: Poppins;
+color: white;
+font-size: 60px;
+`;
+
 const Mapicon = styled.img`
-width: 50p%;
+width: 200px;
+padding: 30px;
 `;
 
 
@@ -23,8 +30,10 @@ export class HomePage extends Component{
         return (
 
             <Back>
-                <Mapicon src={roadmap}></Mapicon>
-                
+            <TextWrapper>
+                We the People
+            </TextWrapper>
+            <Mapicon src={roadmap}></Mapicon>
             </Back>
 
         );
