@@ -43,7 +43,7 @@ export class Level1 extends Component{
     render() {
         return (
             <div style = {{width: "100%", height:"100%", textAlign: "center", backgroundColor: "#E47D5C", paddingBottom: "1000px",}}>
-                <img src = {reseach1} style = {{width:"10%", height:"10%", paddingTop: "100px", borderRadius: "50px",}}></img>
+                <img src = {reseach1} style = {{width:"15%", height:"15%", paddingTop: "100px", borderRadius: "50px",}}></img>
                 <Header>Discover Your Voice And Find Your Passion</Header>
                 <Header>
                     Congrats! Just By Starting here, you are on the path for success!
