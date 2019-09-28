@@ -22,12 +22,19 @@ color: white;
 font-size: 60px;
 `;
 
+const Header = styled.div`
+font-family: Poppins;
+color: white;
+font-size: 30px;
+width: 500px;
+`;
+
 const Mapicon = styled.img`
 width: 200px;
 padding: 30px;
 `;
 
-const But = styled.button`
+const But = styled(Button)`
 width: 100px;
 height: 100px;
 background-color: white;
@@ -44,16 +51,21 @@ export class HomePage extends Component{
             <TextWrapper>
                 We the People
             </TextWrapper>
-            <Mapicon src={roadmap}></Mapicon>
+            <Header>
+            Our organization can help you find your voice and make a change! Choose one that fits your task:
+            </Header>
+            <div>
             <Link to='/signup'>
-                <Button variant="light">Are Ready to Make A Change</Button>
+                <Button bright="light">Are Ready to Make A Change</Button>
             </Link>
             <Link to='/signin'>
-                <Button variant="light">Are Already Making A Change</Button>
+                <Button bright="light">Are Already Making A Change</Button>
             </Link>
             <Link to='/roadMap'>
-                <Button variant="light">Quick Overview</Button>
+                <Button bright="light">Quick Overview</Button>
             </Link>
+            </div>
+
             </Back>
 
         );
