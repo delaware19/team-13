@@ -20,6 +20,7 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 background-color: #E47D5C;
+padding-bottom: 1000px;
 `;
 
 const TextWrapper = styled.div`

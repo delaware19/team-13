@@ -14,11 +14,20 @@ const FormWrapper = styled.div`
     
 `;
 */
+const TotalWrapper = styled.div`
+background-color: #E47D5C;
+`;
+
+const StyledContainer = styled(Container)`
+background-color: #E47D5C;
+padding: 20px;
+`;
 
 export class SignIn extends Component {
     render() {
         return (
-            <Container style = {{padding: "20px"}}>
+
+            <StyledContainer>
                 <Form>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
@@ -39,7 +48,7 @@ export class SignIn extends Component {
                         Submit
                 </Button>
                 </Form>
-            </Container>
+                </StyledContainer>
             /*
             <Form>
                 <FormWrapper id = "form_wrapper">
