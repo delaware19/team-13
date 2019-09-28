@@ -29,7 +29,13 @@ color: white;
 
 const Phase = styled.div`
 padding-bottom: 30px;
+`;
 
+const Border = styled.div`
+width: 500px;
+height: 200px;;
+border: 2px soild blue;
+box-sizing: border-box;
 `;
 
 export class InterActiveRoadMap extends Component {
@@ -48,7 +54,6 @@ export class InterActiveRoadMap extends Component {
             </Phase>
             
           </div>
-
           <div className = "phase2">
             <Header>Coalition Building Phase</Header>
                 <Phase>
