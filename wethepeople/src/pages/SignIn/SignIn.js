@@ -53,29 +53,25 @@ export class SignIn extends Component {
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
+                        <Form.Text>
                             We'll never share your email with anyone else.
-                    </Form.Text>
+                        </Form.Text>
                     </Form.Group>
 
                     <Form.Group controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
-                    <Form.Group controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Check me out" />
-                    </Form.Group>
                     <Align>
-                    <Link to='/InterActiveRoadMap'>
-                       
-                        <StyledButton variant="primary" type="submit">
-                        Submit
+                        <Link to='/InterActiveRoadMap'>
+
+                            <StyledButton variant="primary" type="submit">
+                                Submit
                         </StyledButton>
                         </Link>
-                        </Align>
-                    
+                    </Align>
                 </Form>
-                </StyledContainer>
+            </StyledContainer>
             /*
             <Form>
                 <FormWrapper id = "form_wrapper">

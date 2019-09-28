@@ -5,7 +5,7 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import SignIn from './pages/SignIn/SignIn';
-import SignUP from './pages/SignUp/SignUp';
+import SignUp from './pages/SignUp/SignUp';
 import InterActiveRoadMap from './pages/InterActiveRoadMap/InterActiveRoadMap';
 import InterActiveRoadMap2 from './pages/InterActiveRoadMap2/InterActiveRoadMap2';
 import InterActiveRoadMap3 from './pages/InterActiveRoadMap3/InterActiveRoadMap3';
@@ -45,7 +45,7 @@ function App() {
         <SignIn />
       </Route>
       <Route path='/signup'>
-      <SignUP />
+      <SignUp />
       </Route>
       <Route path='/'>
         <HomePage />

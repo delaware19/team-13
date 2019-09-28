@@ -13,6 +13,8 @@ const StyledContainer = styled(Container)`
 background-color: #E47D5C;
 width: 100%;
 padding: 20px;
+padding-bottom: 1000px;
+padding-top: 100px;
 max-width: 1700px;
 `;
 
@@ -38,8 +40,11 @@ padding-bottom: 600px;
 
 export class SignUp extends Component {
   render() {
-    return (
-      <Container style={{ padding: "20px" }}>
+    return(
+    <>
+        <h1 style = {{backgroundColor:  "#E47D5C", textAlign: "center", marginBottom: "0px"}}>Your Journey Starts Here</h1>
+
+      <StyledContainer>
         <Form>
           <Form.Group controlId="nameAndContact">
             <Form.Row>
@@ -91,7 +96,8 @@ export class SignUp extends Component {
            </Button>
           </Link>
         </Form>
-      </Container>
+      </StyledContainer>
+      </>
       /*
       
             <StyledContainer style = {{padding: "20px"}}>
