@@ -24,7 +24,7 @@ export class FinishedStage1 extends Component {
                 </Link>
                 <div style={{ color: "white" }}>
                     <h1 style={{ textAlign: "center", size: "100px" }}>Congratulations!</h1>
-                    <h2 style={{ textAlign: "center" }}>You finished Phase 1 of the Hopenmoics System!<br></br>
+                    <h2 style={{ textAlign: "center" }}>You finished Phase 1 of the Hopenomics System!<br></br>
                         A Rise team member will be in contact with you to discuss the next stage</h2>
                 </div>
                 <Container>
