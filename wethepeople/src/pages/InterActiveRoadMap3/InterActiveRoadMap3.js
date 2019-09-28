@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, Row, Col, Container } from "react";
 import { Link } from 'react-router-dom';
-//import styled from "styled-components";
+import styled from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reseach1 from "../InterActiveRoadMap/assets/research_l1.png";
 import reseach2 from "../InterActiveRoadMap/assets/research_l2.png";
@@ -20,52 +20,69 @@ import law12 from "../InterActiveRoadMap/assets/law_l12.png";
 // Listing Wrapper takes care of the dynamically given items
 // and puts them in a grid that reponsively adjusts
 
+const Header = styled.div`
+padding-top: 30px;
+padding-bottom: 15px;
+font-size: 60px;
+color: white;
+`;
+
+const Phase = styled.div`
+padding-bottom: 30px;
+`;
+
+const Border = styled.div`
+width: 500px;
+height: 200px;;
+border: 2px soild blue;
+box-sizing: border-box;
+`;
 
 export class InterActiveRoadMap extends Component {
   render() {
     return (
-      <div>
+      <div style = {{width: "100%", height:"100%", textAlign: "center", backgroundColor: "#E47D5C", paddingBottom: "1000px"}}>
+          
           <div className = "phase1">
-            <h1>Reseach Phase</h1>
-            <div>
-                    <img src = {reseach1} style = {{width:"10%"}}></img>
+            <Header>Reseach Phase</Header>
+            <Phase>
                 
-                    <img src = {reseach2} style = {{width:"10%"}}></img>
+                    <img src = {reseach1} style = {{width: "200px", height:"200px", marginRight: "100px", borderRadius: "50px",}}></img>
                 
-                    <Link to='/Lv3'>
-                    <img src = {reseach3} style = {{width:"10%"}}></img>
-                    </Link>
-            </div>
+                <img src = {reseach2} style = {{width: "200px", height:"200px", marginRight: "100px", borderRadius: "50px",}}></img>
+               <Link to='/Lv3'>
+                <img src = {reseach3} style = {{width: "200px", height:"200px", borderRadius: "50px",}}></img>
+              </Link>
+            </Phase>
             
           </div>
-
           <div className = "phase2">
-            <h1>Coalition Building Phase</h1>
-                <div>
-                 <img src = {coalition4} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
-                 <img src = {coalition5} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
-                 <img src = {coalition6} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
-                </div>
+            <Header>Coalition Building Phase</Header>
+                <Phase>
+                 <img src = {coalition4} style = {{filter: "grayscale(100%)",  width: "200px", height:"200px", marginRight: "100px", borderRadius: "50px",}}></img>
+                 <img src = {coalition5} style = {{filter: "grayscale(100%)",  width: "200px", height:"200px", marginRight: "100px", borderRadius: "50px",}}></img>
+                 <img src = {coalition6} style = {{filter: "grayscale(100%)",  width: "200px", height:"200px", borderRadius: "50px",}}></img>
+                </Phase>
           </div>
 
           <div className = "phase3"> 
-            <h1>Story Telling Phase</h1>
-            <div>
-                <img src = {story7} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
-                <img src = {story8} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
-                <img src = {story9} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
-            </div>
+            <Header>Story Telling Phase</Header>
+            <Phase>
+                <img src = {story7} style = {{filter: "grayscale(100%)", width: "200px", height:"200px", marginRight: "100px", borderRadius: "50px",}}></img>
+                <img src = {story8} style = {{filter: "grayscale(100%)", width: "200px", height:"200px", marginRight: "100px", borderRadius: "50px",}}></img>
+                <img src = {story9} style = {{filter: "grayscale(100%)", width: "200px", height:"200px", borderRadius: "50px",}}></img>
+            </Phase>
           </div>
 
           <div className = "phase4">
-            <h1>Law Making Phase</h1>
-            <div>
-                <img src = {law10} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
-                <img src = {law11} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
-                <img src = {law12} style = {{filter: "grayscale(100%)",width:"10%"}}></img>
-            </div>
+            <Header>Law Making Phase</Header>
+            <Phase>
+                <img src = {law10} style = {{filter: "grayscale(100%)", width: "200px", height:"200px", marginRight: "100px", borderRadius: "50px",}}></img>
+                <img src = {law11} style = {{filter: "grayscale(100%)",width: "200px", height:"200px", marginRight: "100px", borderRadius: "50px",}}></img>
+                <img src = {law12} style = {{filter: "grayscale(100%)", width: "200px", height:"200px", borderRadius: "50px", }}></img>
+            </Phase>
           </div>
-          </div>
+      </div>
     );
   }
 }
