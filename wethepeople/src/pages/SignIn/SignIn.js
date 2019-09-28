@@ -21,6 +21,26 @@ background-color: #E47D5C;
 const StyledContainer = styled(Container)`
 background-color: #E47D5C;
 padding: 20px;
+max-width: 1700px;
+`;
+
+const StyledButton = styled(Button)`
+
+width: 200px;
+height: 65px;
+margin-right: 20px;
+margin-bottom: 20px;
+background-color: white; 
+color: black;
+border-radius: 15px;
+border-color: white;
+font-size: 20px;
+
+`;
+
+const Align = styled.div`
+display: flex;
+justify-content: center;
 `;
 
 export class SignIn extends Component {
@@ -44,11 +64,15 @@ export class SignIn extends Component {
                     <Form.Group controlId="formBasicCheckbox">
                         <Form.Check type="checkbox" label="Check me out" />
                     </Form.Group>
+                    <Align>
                     <Link to='/InterActiveRoadMap'>
-                        <Button variant="primary" type="submit">
+                       
+                        <StyledButton variant="primary" type="submit">
                         Submit
-                        </Button>
-                    </Link>
+                        </StyledButton>
+                        </Link>
+                        </Align>
+                    
                 </Form>
                 </StyledContainer>
             /*

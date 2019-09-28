@@ -9,6 +9,30 @@ import { Link } from 'react-router-dom';
 // Listing Wrapper takes care of the dynamically given items
 // and puts them in a grid that reponsively adjusts
 
+const StyledContainer = styled(Container)`
+background-color: #E47D5C;
+width: 100%;
+padding: 20px;
+max-width: 1700px;
+`;
+
+const StyledButton = styled(Button)`
+
+width: 200px;
+height: 65px;
+margin-right: 20px;
+margin-bottom: 20px;
+background-color: white; 
+color: black;
+border-radius: 15px;
+border-color: white;
+font-size: 20px;
+`;
+
+const Align = styled.div`
+display: flex;
+justify-content: center;
+`;
 
 
 export class SignUp extends Component {
@@ -17,7 +41,7 @@ export class SignUp extends Component {
 
 
 
-      <Container style = {{padding: "20px"}}>
+      <StyledContainer style = {{padding: "20px"}}>
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>First Name</Form.Label>
@@ -59,13 +83,15 @@ export class SignUp extends Component {
             <Form.Control type="phoneNumber" placeholder="Number" />
           </Form.Group>
           <Link to='/InterActiveRoadMap'>
-            <Button variant="primary" type="submit">
+            <Align>
+            <StyledButton variant="primary" type="submit">
               Submit
-             </Button>
+             </StyledButton>
+             </Align>
           </Link>
 
         </Form>
-      </Container>
+      </StyledContainer>
     );
   }
 }
