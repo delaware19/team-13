@@ -24,4 +24,4 @@ export class TypeFormComponent extends Component{
     }
 }
 
-export default HomePage;
+export default TypeFormComponent;
