@@ -1,5 +1,6 @@
 import React, { Component }  from "react";
 import { TypeFormComponent } from "./components/TypeFormComponent";
+import styled from "styled-components";
 
 
 
