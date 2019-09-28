@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Row, Col, Container } from "react-bootstrap";
+import { Button, Row, Col, Container, Carousel } from "react-bootstrap";
 //import roadmap from "../HomePage/assets/roadmap.png";
 //import styled from "styled-components";
 import phase1 from "../HomePage/assets/phase1.png";
@@ -19,35 +19,46 @@ import "./RoadMap.css"
 export class RoadMap extends Component {
   render() {
     return (
-      <>
+      <div style = {{backgroundColor: '#E08874', paddingTop: '100px', paddingBottom: '500px'}}>
         <Link to='/HomePage'>
           <Button variant="primary" style = {{margin: "20px"}}>
             Back
           </Button>
         </Link>
-        <Container style = {{padding: "20px"}}>
-          <Row>
-            <Col>
-              <img src={phase1}></img>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <img src={phase2}></img>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <img src={phase3}></img>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <img src={phase4}></img>
-            </Col>
-          </Row>
-        </Container>
-      </>
+        <Container>
+          <Carousel>
+            <Carousel.Item>
+              <img
+              className="d-block w-100"
+              src={phase1}
+              alt="First slide"
+            />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={phase2}
+                alt="Third slide"
+              />
+
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={phase3}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={phase4}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+            </Carousel>
+          </Container>
+      </div>
     );
   }
 }
