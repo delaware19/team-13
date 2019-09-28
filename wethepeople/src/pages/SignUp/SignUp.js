@@ -11,7 +11,10 @@ import { Link } from 'react-router-dom';
 
 const StyledContainer = styled(Container)`
 background-color: #E47D5C;
+width: 100%;
 padding: 20px;
+max-width: 1700px;
+
 `;
 
 

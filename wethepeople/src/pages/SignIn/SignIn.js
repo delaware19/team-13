@@ -21,6 +21,7 @@ background-color: #E47D5C;
 const StyledContainer = styled(Container)`
 background-color: #E47D5C;
 padding: 20px;
+max-width: 1700px;
 `;
 
 export class SignIn extends Component {
