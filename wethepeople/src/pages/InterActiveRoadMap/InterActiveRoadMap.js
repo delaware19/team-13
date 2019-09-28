@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Button } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 //import styled from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reseach1 from "../InterActiveRoadMap/assets/research_l1.png";
@@ -28,7 +28,9 @@ export class InterActiveRoadMap extends Component {
           <div className = "phase1">
             <h1>Reseach Phase</h1>
             <div>
-                <img src = {reseach1}></img>
+                <Link to='/Lv1'>
+                    <img src = {reseach1}></img>
+                </Link>
                 <img src = {reseach2} style = {{filter: "grayscale(100%)"}}></img>
                 <img src = {reseach3} style = {{filter: "grayscale(100%)"}}></img>
             </div>
