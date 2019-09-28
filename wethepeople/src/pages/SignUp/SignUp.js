@@ -9,6 +9,10 @@ import { Link } from 'react-router-dom';
 // Listing Wrapper takes care of the dynamically given items
 // and puts them in a grid that reponsively adjusts
 
+const StyledContainer = styled(Container)`
+background-color: #E47D5C;
+padding: 20px;
+`;
 
 
 export class SignUp extends Component {
@@ -17,7 +21,7 @@ export class SignUp extends Component {
 
 
 
-      <Container style = {{padding: "20px"}}>
+      <StyledContainer style = {{padding: "20px"}}>
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>First Name</Form.Label>
@@ -65,7 +69,7 @@ export class SignUp extends Component {
           </Link>
 
         </Form>
-      </Container>
+      </StyledContainer>
     );
   }
 }
