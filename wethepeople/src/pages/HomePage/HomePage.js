@@ -56,13 +56,13 @@ export class HomePage extends Component{
             </Header>
             <div>
             <Link to='/signup'>
-                <Button bright="light">Are Ready to Make A Change</Button>
+                <Button  variant="light">Are Ready to Make A Change</Button>
             </Link>
             <Link to='/signin'>
-                <Button bright="light">Are Already Making A Change</Button>
+                <Button variant="light">Are Already Making A Change</Button>
             </Link>
             <Link to='/roadMap'>
-                <Button bright="light">Quick Overview</Button>
+                <Button variant="light">Quick Overview</Button>
             </Link>
             </div>
 
