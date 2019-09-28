@@ -15,8 +15,9 @@ import { Link } from 'react-router-dom';
 export class Level2 extends Component{
     render() {
         return (
-            <Container>
-                <img src = {reseach2}></img>
+            <div style = {{width: "100%", height:"100%", textAlign: "center", backgroundColor: "#E47D5C", paddingBottom: "1000px"}}>
+            <Container >
+                <img src = {reseach2} style = {{width:"10%", paddingTop: "50px"}}></img>
                 <p>Research The Legeslative Landscape in Your State</p>
                 <p>
                     For this section you will need to some local laws pertaining you your topic.
@@ -85,6 +86,7 @@ export class Level2 extends Component{
                     <Button bright="light">Submit!</Button>
                 </Link>
             </Container>
+            </div>
         );
     }
 }
