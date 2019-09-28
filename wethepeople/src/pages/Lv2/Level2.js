@@ -11,35 +11,66 @@ import { Link } from 'react-router-dom';
 // Listing Wrapper takes care of the dynamically given items
 // and puts them in a grid that reponsively adjusts
 
+const Header = styled.div`
+padding-top: 30px;
+padding-bottom: 15px;
+font-size: 30px;
+color: white;
+`;
+
+const SubHeader = styled.div`
+font-size: 20px;
+color: white;
+`;
+
+const StyledButton = styled(Button)`
+
+width: 200px;
+height: 65px;
+margin-right: 20px;
+margin-bottom: 20px;
+background-color: white; 
+color: black;
+border-radius: 15px;
+border-color: white;
+font-size: 18px;
+`;
+
+const Align = styled.div`
+display: flex;
+justify-content: center;
+padding-bottom: 600px;
+padding-top: 30px;
+`;
 
 export class Level2 extends Component{
     render() {
         return (
-            <div style = {{width: "100%", height:"100%", textAlign: "center", backgroundColor: "#E47D5C", paddingBottom: "1000px"}}>
+            <div style = {{width: "100%", height:"100%", textAlign: "center", backgroundColor: "#E47D5C", paddingBottom: "1000px", borderRoadius: "50px",}}>
             <Container >
                 <img src = {reseach2} style = {{width:"10%", paddingTop: "50px"}}></img>
-                <p>Research The Legeslative Landscape in Your State</p>
-                <p>
+                <Header>Research The Legeslative Landscape in Your State</Header>
+                <Header>
                     For this section you will need to some local laws pertaining you your topic.
-                </p>
-                <p>
+                </Header>
+                <Header>
                     Lets start with 3! (Enter the link to the law's website in the text-box)
-                </p>
+                </Header>
 
                 <Form>
                     <Form.Group as={Row} controlId="formPlaintextPassword">
-                        <Form.Label column sm="2">
+                        <SubHeader column sm="2">
                         Law 1
-                        </Form.Label>
+                        </SubHeader>
                         <Col sm="10">
                         <Form.Control type="URL" placeholder="URL" />
                         </Col>
                     </Form.Group>
 
                     <Form.Group as={Row} controlId="formPlaintextPassword">
-                        <Form.Label column sm="2">
+                        <SubHeader column sm="2">
                         Notes
-                        </Form.Label>
+                       </SubHeader>
                         <Col sm="10">
                         <Form.Control as="textarea" rows="3" />
                         </Col>
@@ -47,43 +78,43 @@ export class Level2 extends Component{
                     
 
                     <Form.Group as={Row} controlId="formPlaintextPassword">
-                        <Form.Label column sm="2">
+                        <SubHeader column sm="2">
                         Law 2
-                        </Form.Label>
+                        </SubHeader>
                         <Col sm="10">
                         <Form.Control type="URL" placeholder="URL" />
                         </Col>
                     </Form.Group>
 
                     <Form.Group as={Row} controlId="formPlaintextPassword">
-                        <Form.Label column sm="2">
+                        <SubHeader column sm="2">
                         Notes
-                        </Form.Label>
+                        </SubHeader>
                         <Col sm="10">
                         <Form.Control as="textarea" rows="3" />
                         </Col>
                     </Form.Group>
 
                     <Form.Group as={Row} controlId="formPlaintextPassword">
-                        <Form.Label column sm="2">
+                        <SubHeader column sm="2">
                         Law 3
-                        </Form.Label>
+                        </SubHeader>
                         <Col sm="10">
                         <Form.Control type="URL" placeholder="URL" />
                         </Col>
                     </Form.Group>
 
                     <Form.Group as={Row} controlId="formPlaintextPassword">
-                        <Form.Label column sm="2">
+                        <SubHeader column sm="2">
                         Notes
-                        </Form.Label>
+                        </SubHeader>
                         <Col sm="10">
                         <Form.Control as="textarea" rows="3" />
                         </Col>
                     </Form.Group>
                 </Form>
                 <Link to='/InterActiveRoadMap3'>
-                    <Button bright="light">Submit!</Button>
+                    <StyledButton bright="light">Submit!</StyledButton>
                 </Link>
             </Container>
             </div>
