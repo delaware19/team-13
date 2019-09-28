@@ -21,6 +21,7 @@ justify-content: center;
 flex-wrap: wrap;
 background-color: #E47D5C;
 padding-bottom: 1000px;
+padding-top: 120px;
 `;
 
 const TextWrapper = styled.div`
