@@ -7,15 +7,33 @@ import HomePage from './pages/HomePage/HomePage';
 import SignIn from './pages/SignIn/SignIn';
 import SignUP from './pages/SignUp/SignUp';
 import InterActiveRoadMap from './pages/InterActiveRoadMap/InterActiveRoadMap';
+import InterActiveRoadMap2 from './pages/InterActiveRoadMap2/InterActiveRoadMap2';
+import InterActiveRoadMap3 from './pages/InterActiveRoadMap3/InterActiveRoadMap3';
 import RoadMap from './pages/RoadMap/RoadMap';
 import Level1 from './pages/Lv1/Level1';
+import Level2 from './pages/Lv2/Level2';
+import Level3 from './pages/Lv3/Level3';
+
+
 
 
 function App() {
   return (
     <Switch>
+      <Route path='/Lv3'>
+        <Level3 />
+      </Route>
+      <Route path='/Lv2'>
+        <Level2 />
+      </Route>
       <Route path='/Lv1'>
         <Level1 />
+      </Route>
+      <Route path='/InterActiveRoadMap3'>
+        <InterActiveRoadMap3 />
+      </Route>
+      <Route path='/InterActiveRoadMap2'>
+        <InterActiveRoadMap2 />
       </Route>
       <Route path='/InterActiveRoadMap'>
         <InterActiveRoadMap />

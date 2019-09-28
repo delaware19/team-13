@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 // and puts them in a grid that reponsively adjusts
 
 
-export class Level1 extends Component{
+export class FinishedStage1 extends Component{
     render() {
         return (
             <div>
@@ -29,4 +29,4 @@ export class Level1 extends Component{
     }
 }
 
-export default Level1;
+export default FinishedStage1;
