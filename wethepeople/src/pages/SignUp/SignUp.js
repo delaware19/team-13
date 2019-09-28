@@ -75,7 +75,7 @@ export class SignUp extends Component {
           <Form.Group>
             <Form.Row>
               <Col>
-                <Form.Control type="password" placeholder="password" />
+                <Form.Control type="Password" placeholder="Password" />
                 <Label>Password</Label>
               </Col>
               <Col>
@@ -87,8 +87,8 @@ export class SignUp extends Component {
           <Form.Group>
             <Form.Row>
               <Col>
-                <Form.Control as="textarea" placeholder="Please describe your injustice here" />
-                <Label>Why we need a reform</Label>
+                <Form.Control as="textarea" placeholder="Please describe your injustice here." />
+                <Label>Why do we need a reform?</Label>
               </Col>
             </Form.Row>
           </Form.Group>
