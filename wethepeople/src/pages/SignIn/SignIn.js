@@ -41,6 +41,7 @@ font-size: 20px;
 const Align = styled.div`
 display: flex;
 justify-content: center;
+padding-bottom: 600px;
 `;
 
 export class SignIn extends Component {
