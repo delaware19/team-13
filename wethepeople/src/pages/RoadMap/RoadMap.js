@@ -21,7 +21,7 @@ export class RoadMap extends Component {
     return (
       <div style = {{backgroundColor: '#E08874', paddingTop: '100px', paddingBottom: '500px'}}>
         <Link to='/HomePage'>
-          <Button variant="primary" style = {{margin: "20px"}}>
+          <Button variant="light" style = {{margin: "20px"}}>
             Back
           </Button>
         </Link>

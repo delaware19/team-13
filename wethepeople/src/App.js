@@ -16,8 +16,6 @@ import Level3 from './pages/Lv3/Level3';
 import Finish1 from './pages/FinishedStage1/FinishedStage1';
 
 
-
-
 function App() {
   return (
     <Switch>
