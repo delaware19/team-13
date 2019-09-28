@@ -18,7 +18,7 @@ const FormWrapper = styled.div`
 export class SignIn extends Component {
     render() {
         return (
-            <Container>
+            <Container style = {{padding: "20px"}}>
                 <Form>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
