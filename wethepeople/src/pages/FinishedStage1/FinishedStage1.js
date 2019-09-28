@@ -16,8 +16,13 @@ import { Link } from 'react-router-dom';
 export class FinishedStage1 extends Component {
     render() {
         return (
-            <div style = {{background: "#E47D5C"}}>
-                <div style = {{color: "white"}}>
+            <div style={{ background: "#E47D5C" }}>
+                <Link to='/HomePage'>
+                    <Button variant="light" style={{ margin: "20px" }}>
+                        Back
+                    </Button>
+                </Link>
+                <div style={{ color: "white" }}>
                     <h1 style={{ textAlign: "center", size: "100px" }}>Congratulations!</h1>
                     <h2 style={{ textAlign: "center" }}>You finished Phase 1 of the Hopenmoics System!<br></br>
                         A Rise team member will be in contact with you to discuss the next stage</h2>
@@ -28,7 +33,7 @@ export class FinishedStage1 extends Component {
                             <img src={goldStar} style={{ objectFit: "contain", height: "50%" }}></img>
                         </Col>
                         <Col>
-                            <h3 style = {{color: "white"}}> We would like to commend you for taking the first steps towards making a real change in your community.
+                            <h3 style={{ color: "white" }}> We would like to commend you for taking the first steps towards making a real change in your community.
                                 <br></br><br></br> The next step will be to schedule a call with one of our staff members.
                             </h3>
                         </Col>

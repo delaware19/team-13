@@ -93,10 +93,10 @@ export class HomePage extends Component{
             <ButtonWrapper>
             <Link to='/signup'>
 
-                <StyledButton bright="light">Ready to Make A Change!</StyledButton>
+                <StyledButton bright="light">I'm Ready to Make A Change!</StyledButton>
             </Link>
             <Link to='/signin'>
-                <StyledButton bright="light">Already Making A Change!</StyledButton>
+                <StyledButton bright="light">I'm Already Making A Change!</StyledButton>
             </Link>
             </ButtonWrapper>
 
