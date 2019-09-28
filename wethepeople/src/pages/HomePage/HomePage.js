@@ -8,7 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Listing Wrapper takes care of the dynamically given items
 // and puts them in a grid that reponsively adjusts
 
-
+const Mapicon = styled.img`
+width: 50p%;
+`;
 
 
 export class HomePage extends Component{
