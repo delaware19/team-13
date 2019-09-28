@@ -45,8 +45,11 @@ export class HomePage extends Component{
                 We the People
             </TextWrapper>
             <Mapicon src={roadmap}></Mapicon>
+            <Link to='/signup'>
+                <Button variant="light">Are Ready to Make A Change</Button>
+            </Link>
             <Link to='/signin'>
-                <Button>Login</Button>
+                <Button variant="light">Are Already Making A Change</Button>
             </Link>
             </Back>
 

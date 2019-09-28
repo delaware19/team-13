@@ -5,6 +5,7 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import SignIn from './pages/SignIn/SignIn';
+import SignUP from './pages/SignUp/SignUp';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <SignIn />
       </Route>
       <Route path='/signup'>
-<h1>signup</h1>
+      <SignUP />
       </Route>
       <Route path='/'>
         <HomePage />
