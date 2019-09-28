@@ -8,11 +8,15 @@ import SignIn from './pages/SignIn/SignIn';
 import SignUP from './pages/SignUp/SignUp';
 import InterActiveRoadMap from './pages/InterActiveRoadMap/InterActiveRoadMap';
 import RoadMap from './pages/RoadMap/RoadMap';
+import Level1 from './pages/Lv1/Level1';
 
 
 function App() {
   return (
     <Switch>
+      <Route path='/Lv1'>
+        <Level1 />
+      </Route>
       <Route path='/InterActiveRoadMap'>
         <InterActiveRoadMap />
       </Route>
