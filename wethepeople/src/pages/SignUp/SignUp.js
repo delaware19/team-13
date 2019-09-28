@@ -43,7 +43,6 @@ export class SignUp extends Component {
     return(
     <>
         <h1 style = {{backgroundColor:  "#E47D5C", textAlign: "center", marginBottom: "0px"}}>Your Journey Starts Here</h1>
-
       <StyledContainer>
         <Form>
           <Form.Group controlId="nameAndContact">

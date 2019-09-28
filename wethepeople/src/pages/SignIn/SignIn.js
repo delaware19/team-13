@@ -47,31 +47,32 @@ padding-bottom: 600px;
 export class SignIn extends Component {
     render() {
         return (
-
-            <StyledContainer>
-                <Form>
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                        <Form.Text>
-                            We'll never share your email with anyone else.
+            <>
+                <h1 style={{ backgroundColor: "#E47D5C", textAlign: "center", marginBottom: "0px" }}>Continue Your Journey</h1>
+                <StyledContainer>
+                    <Form>
+                        <Form.Group style = {{paddingLeft: "400px", paddingRight: "400px"}} controlId="formBasicEmail">
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Text>
+                                We'll never share your email with anyone else.
                         </Form.Text>
-                    </Form.Group>
+                        </Form.Group>
 
-                    <Form.Group controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
-                    </Form.Group>
-                    <Align>
-                        <Link to='/InterActiveRoadMap'>
-
-                            <StyledButton variant="primary" type="submit">
-                                Submit
+                        <Form.Group style = {{paddingLeft: "400px", paddingRight: "400px"}} controlId="formBasicPassword">
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type="password" placeholder="Password" />
+                        </Form.Group>
+                        <Align>
+                            <Link to='/InterActiveRoadMap'>
+                                <StyledButton variant="primary" type="submit">
+                                    Login
                         </StyledButton>
-                        </Link>
-                    </Align>
-                </Form>
-            </StyledContainer>
+                            </Link>
+                        </Align>
+                    </Form>
+                </StyledContainer>
+            </>
             /*
             <Form>
                 <FormWrapper id = "form_wrapper">
