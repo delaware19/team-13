@@ -51,6 +51,9 @@ export class HomePage extends Component{
             <Link to='/signin'>
                 <Button variant="light">Are Already Making A Change</Button>
             </Link>
+            <Link to='/roadMap'>
+                <Button variant="light">Quick Overview</Button>
+            </Link>
             </Back>
 
         );

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
 //import styled from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 // The overall page when you click on welcome page
 // Top Wrapper takes the elements on the top of the page
@@ -29,9 +30,11 @@ export class SignIn extends Component {
                     <Form.Check type="checkbox" label="Accept Terms" />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
-                    Submit
+                <Link to='/InterActiveRoadMap'>
+            <Button variant="primary" type="submit">
+             Submit
              </Button>
+            </Link>
             </Form>
         );
     }
