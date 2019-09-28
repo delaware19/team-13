@@ -28,11 +28,11 @@ export class InterActiveRoadMap extends Component {
           <div className = "phase1">
             <h1>Reseach Phase</h1>
             <div>
-                <Link to='/Lv1'>
-                    <img src = {reseach1}></img>
+                  <img src = {reseach1}></img>
+                <img src = {reseach2}></img>
+                <Link to='/Lv3'>
+                    <img src = {reseach3}></img>
                 </Link>
-                <img src = {reseach2} style = {{filter: "grayscale(100%)"}}></img>
-                <img src = {reseach3} style = {{filter: "grayscale(100%)"}}></img>
             </div>
             
           </div>

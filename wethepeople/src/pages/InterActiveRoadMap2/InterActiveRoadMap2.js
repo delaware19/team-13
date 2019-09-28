@@ -21,17 +21,17 @@ import law12 from "../InterActiveRoadMap/assets/law_l12.png";
 // and puts them in a grid that reponsively adjusts
 
 
-export class InterActiveRoadMap extends Component {
+export class InterActiveRoadMap2 extends Component {
   render() {
     return (
       <div>
           <div className = "phase1">
             <h1>Reseach Phase</h1>
             <div>
-                <Link to='/Lv1'>
                     <img src = {reseach1}></img>
+                <Link to='/Lv2'>
+                    <img src = {reseach2}></img>
                 </Link>
-                <img src = {reseach2} style = {{filter: "grayscale(100%)"}}></img>
                 <img src = {reseach3} style = {{filter: "grayscale(100%)"}}></img>
             </div>
             
@@ -68,4 +68,4 @@ export class InterActiveRoadMap extends Component {
   }
 }
 
-export default InterActiveRoadMap;
+export default InterActiveRoadMap2;
