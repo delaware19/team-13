@@ -49,12 +49,12 @@ export class Level2 extends Component{
             <div style = {{width: "100%", height:"100%", textAlign: "center", backgroundColor: "#E47D5C", paddingBottom: "1000px", borderRoadius: "50px",}}>
             <Container >
                 <img src = {reseach2} style = {{width:"10%", paddingTop: "50px"}}></img>
-                <Header>Research The Legeslative Landscape in Your State</Header>
+                <Header>Research the Legislative Landscape in Your State</Header>
                 <Header>
                     For this section you will need to find some local laws pertaining your topic.
                 </Header>
                 <Header>
-                    Lets start with 3! (Enter the link to the law's website in the text-box)
+                    Let's start with 3! (Enter the link to the law's website in the text-box)
                 </Header>
 
                 <Form>
