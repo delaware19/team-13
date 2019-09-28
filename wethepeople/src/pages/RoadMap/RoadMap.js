@@ -25,7 +25,9 @@ export class RoadMap extends Component {
             Back
           </Button>
         </Link>
+        
         <Container>
+        <h1 class="ui header" style = {{color: 'white'}}>Scroll for an overview!</h1>
           <Carousel>
             <Carousel.Item>
               <img
@@ -58,6 +60,7 @@ export class RoadMap extends Component {
               </Carousel.Item>
             </Carousel>
           </Container>
+          
       </div>
     );
   }
