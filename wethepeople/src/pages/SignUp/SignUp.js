@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
+<<<<<<< HEAD
 export class SignUp extends Component {
   render() {
     return (
@@ -66,6 +67,55 @@ export class SignUp extends Component {
       </Form>
     );
   }
+=======
+export class SignUp extends Component{
+    render() {
+        return (
+            <Form>
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Text className="text-muted">
+                        We'll never share your email with anyone else.
+                    </Form.Text>
+                </Form.Group>
+
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control type="password" placeholder="Password" />
+                </Form.Group>
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Re-enter Password</Form.Label>
+                    <Form.Control type="password" placeholder="Password" />
+                </Form.Group>
+
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Label>State</Form.Label>
+                    <Form.Control type="state" placeholder="State" />
+                </Form.Group>
+
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Political Injustice</Form.Label>
+                    <Form.Control type="password" placeholder="Injustice" />
+                </Form.Group>
+
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Phone Number</Form.Label>
+                    <Form.Control type="phoneNumber" placeholder="Number" />
+                </Form.Group>
+
+                <Form.Group controlId="formBasicCheckbox">
+                    <Form.Check type="checkbox" label="Check me out" />
+                </Form.Group>
+
+                
+                <Button variant="primary" type="submit">
+                    Submit
+                </Button>
+            </Form>
+        );
+    }
+>>>>>>> 2549f1e92b2c6805a7bc36b2625a7cd84c536f60
 }
 
 export default SignUp;
