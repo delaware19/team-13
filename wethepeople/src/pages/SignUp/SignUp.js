@@ -39,21 +39,58 @@ padding-bottom: 600px;
 export class SignUp extends Component {
   render() {
     return (
-      <Container>
-      <Form>
-        <Form.Row>
-          <Col>
-            <Form.Control placeholder="First name" />
-          </Col>
-          <Col>
-            <Form.Control placeholder="Last name" />
-          </Col>
-          <Col>
-          <Form.Control type="email" placeholder="Enter email" />
-          </Col>
-
-        </Form.Row>
-      </Form>
+      <Container style={{ padding: "20px" }}>
+        <Form>
+          <Form.Group controlId="nameAndContact">
+            <Form.Row>
+              <Col>
+                <Form.Control placeholder="First name" />
+                <Form.Label>First Name</Form.Label>
+              </Col>
+              <Col>
+                <Form.Control placeholder="Last name" />
+                <Form.Label>Last Name</Form.Label>
+              </Col>
+              <Col>
+                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Label>Email Address</Form.Label>
+              </Col>
+              <Col>
+                <Form.Control placeholder="xxx-xxx-xxxx" />
+                <Form.Label>Mobile</Form.Label>
+              </Col>
+              <Col>
+                <Form.Control placeholder="State" />
+                <Form.Label>State</Form.Label>
+              </Col>
+            </Form.Row>
+          </Form.Group>
+          <Form.Group>
+            <Form.Row>
+              <Col>
+                <Form.Control type="password" placeholder="password" />
+                <Form.Label>Password</Form.Label>
+              </Col>
+              <Col>
+                <Form.Control type="password" placeholder="Re-enter password" />
+                <Form.Label>Re-enter Password</Form.Label>
+              </Col>
+            </Form.Row>
+          </Form.Group>
+          <Form.Group>
+            <Form.Row>
+              <Col>
+                <Form.Control as="textarea" placeholder="Please describe your injustice here" />
+                <Form.Label>Why we need a reform</Form.Label>
+              </Col>
+            </Form.Row>
+          </Form.Group>
+          <Link to='/InterActiveRoadMap'>
+            <Button variant="primary" type="submit">
+              Submit
+           </Button>
+          </Link>
+        </Form>
       </Container>
       /*
       
