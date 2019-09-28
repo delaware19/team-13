@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // and puts them in a grid that reponsively adjusts
 
 
-export class InterActiveRoadMap extends Component {
+export class InterActiveRoadMap2 extends Component {
   render() {
     return (
       <div>
@@ -37,4 +37,4 @@ export class InterActiveRoadMap extends Component {
   }
 }
 
-export default InterActiveRoadMap;
+export default InterActiveRoadMap2;
