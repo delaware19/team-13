@@ -44,23 +44,27 @@ justify-content: center;
 padding-bottom: 600px;
 `;
 
+const Label = styled(Form.Label)`
+color: white;
+`;
+
 export class SignIn extends Component {
     render() {
         return (
             <>
-                <h1 style={{ backgroundColor: "#E47D5C", textAlign: "center", marginBottom: "0px"}}>Continue Your Journey</h1>
+                <h1 style={{ backgroundColor: "#E47D5C", textAlign: "center", marginBottom: "0px", fontSize: "50px", color:"white", paddingTop: "30px",}}>Continue Your Journey</h1>
                 <StyledContainer>
                     <Form>
                         <Form.Group style = {{paddingLeft: "400px", paddingRight: "400px"}} controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
+                            <Label>Email address</Label>
                             <Form.Control type="email" placeholder="Enter email" />
-                            <Form.Text>
+                            <Label>
                                 We'll never share your email with anyone else.
-                        </Form.Text>
+                        </Label>
                         </Form.Group>
 
                         <Form.Group style = {{paddingLeft: "400px", paddingRight: "400px"}} controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
+                            <Label>Password</Label>
                             <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
                         <Align>
@@ -73,30 +77,6 @@ export class SignIn extends Component {
                     </Form>
                 </StyledContainer>
             </>
-            /*
-            <Form>
-                <FormWrapper id = "form_wrapper">
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                    </Form.Group>
-
-                    <Form.Group controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
-                    </Form.Group>
-
-                    <Form.Group controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Accept Terms" />
-                    </Form.Group>
-
-                    <Link to='/InterActiveRoadMap'>
-                    <Button variant="primary" type="submit">
-                    Submit
-                    </Button>
-                    </Link>
-                </FormWrapper>
-            </Form>*/
         );
     }
 }
